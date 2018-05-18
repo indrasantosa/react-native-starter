@@ -1,10 +1,10 @@
-import { createStackNavigator } from 'react-navigation'
+import { createSwitchNavigator } from 'react-navigation'
 
 import HomeScreen from './screens/HomeScreen'
 import LoginScreen from './screens/LoginScreen'
 import AuthLoadingScreen from './screens/AuthLoadingScreen'
 
-export default createStackNavigator(
+export default createSwitchNavigator(
   {
     authLoading: {
       screen: AuthLoadingScreen
@@ -19,12 +19,6 @@ export default createStackNavigator(
     }
   },
   {
-    initialRouteName: 'authLoading',
-    headerMode: 'none',
-    transitionConfig: () => ({
-      transitionSpec: {
-        duration: 0
-      }
-    })
+    initialRouteName: 'authLoading'
   }
 )
