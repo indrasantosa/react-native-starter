@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native'
 import { Container, Button, Text } from 'native-base'
 import { createStackNavigator } from 'react-navigation'
 
-export default class App extends React.Component {
+export default class LoginScreen extends React.Component {
   render() {
     return (
       <Container>
